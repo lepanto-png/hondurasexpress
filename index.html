@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honduras Express - Paquetería de confianza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased selection:bg-blue-200">
+
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300 backdrop-blur-md bg-white/70 border-b border-gray-200/50" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2 cursor-pointer">
+                <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white">
+                    <i data-lucide="package"></i>
+                </div>
+                <span class="font-bold text-xl tracking-tight text-gray-900">Honduras Express</span>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
+                <a href="#servicios" class="hover:text-blue-600 transition-colors">Servicios</a>
+                <a href="#como-funciona" class="hover:text-blue-600 transition-colors">¿Cómo funciona?</a>
+                <a href="#contacto" class="hover:text-blue-600 transition-colors">Contacto</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="/portal-clientes" class="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors flex items-center gap-1">
+                    <i data-lucide="user" class="w-4 h-4"></i>
+                    Área Clientes
+                </a>
+                <a href="#contacto" class="bg-gray-900 hover:bg-black text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all shadow-sm hover:shadow-md">
+                    Cotizar Envío
+                </a>
+            </div>
+
+            <button class="md:hidden text-gray-600" id="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-16 px-6 overflow-hidden">
+        <section class="max-w-7xl mx-auto flex flex-col items-center text-center py-20 animate-fade-in-up">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-sm font-medium mb-8 border border-blue-100">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                </span>
+                Envíos activos y operando con normalidad
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-gray-900 mb-6 leading-[1.1] max-w-4xl">
+                Conectamos España con <br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">tu gente en Honduras.</span>
+            </h1>
+            
+            <p class="text-xl text-gray-500 mb-10 max-w-2xl font-light">
+                Paquetería rápida, segura y puerta a puerta. Llevamos tus cajas, documentos y encomiendas con el máximo cuidado porque sabemos lo que significan para ti.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#contacto" class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-medium text-lg transition-all shadow-lg shadow-blue-600/20 flex items-center justify-center gap-2">
+                    Enviar ahora
+                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+                <a href="/portal-clientes" class="px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 border border-gray-200 rounded-full font-medium text-lg transition-all flex items-center justify-center gap-2 shadow-sm">
+                    <i data-lucide="layout-dashboard" class="w-5 h-5"></i>
+                    Rastrear mi paquete
+                </a>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto py-24" id="servicios">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Nuestros Servicios</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">Opciones flexibles adaptadas a tus necesidades de tiempo y presupuesto.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group reveal">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="plane"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Envío Aéreo</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">La opción más rápida para documentos y paquetes urgentes. Entregas en tiempo récord directamente a la puerta de su casa.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group reveal delay-100">
+                    <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="ship"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Envío Marítimo</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">Ideal para cajas grandes, electrodomésticos y mudanzas. Excelente relación costo-beneficio para envíos pesados.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group reveal delay-200">
+                    <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Puerta a Puerta</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">Recogemos en tu domicilio en España y entregamos directamente en las manos de tu familiar en cualquier parte de Honduras.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-900 rounded-[3rem] p-12 md:p-24 max-w-7xl mx-auto text-white reveal overflow-hidden relative">
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-blue-600/20 blur-3xl rounded-full"></div>
+            <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 bg-indigo-600/20 blur-3xl rounded-full"></div>
+            
+            <div class="relative z-10 grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6">Tecnología al servicio de tus envíos</h2>
+                    <p class="text-gray-400 mb-8 text-lg">Nuestro nuevo portal de clientes te permite tener control total sobre tus paquetes. Todo desde tu móvil o computadora.</p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check-circle-2" class="text-blue-500"></i> Rastreo en tiempo real</li>
+                        <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check-circle-2" class="text-blue-500"></i> Historial de envíos</li>
+                        <li class="flex items-center gap-3 text-gray-300"><i data-lucide="check-circle-2" class="text-blue-500"></i> Gestión de direcciones</li>
+                    </ul>
+                    <a href="/portal-clientes" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-medium transition-colors">
+                        Acceder al Portal
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                </div>
+                <div class="relative">
+                    <div class="aspect-[4/3] bg-gradient-to-tr from-gray-800 to-gray-700 rounded-2xl border border-gray-600 shadow-2xl overflow-hidden flex items-center justify-center">
+                        <i data-lucide="laptop" class="w-32 h-32 text-gray-500 opacity-50"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto py-24" id="contacto">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div class="reveal">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Estamos aquí para ayudarte</h2>
+                    <p class="text-gray-500 mb-10 text-lg">Contáctanos para solicitar una cotización, programar una recogida o resolver cualquier duda sobre tu envío a Honduras.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4 p-4 rounded-2xl hover:bg-white hover:shadow-sm transition-all border border-transparent hover:border-gray-100">
+                            <div class="bg-green-100 text-green-600 p-3 rounded-xl"><i data-lucide="message-circle"></i></div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">WhatsApp</h4>
+                                <p class="text-gray-500 text-sm mb-1">Atención rápida y cotizaciones</p>
+                                <a href="https://wa.me/34600000000" class="text-green-600 font-medium hover:underline">+34 600 000 000</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl hover:bg-white hover:shadow-sm transition-all border border-transparent hover:border-gray-100">
+                            <div class="bg-blue-100 text-blue-600 p-3 rounded-xl"><i data-lucide="phone"></i></div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Llámanos</h4>
+                                <p class="text-gray-500 text-sm mb-1">Horario: L-V 9:00 a 18:00</p>
+                                <a href="tel:+34900000000" class="text-blue-600 font-medium hover:underline">+34 900 000 000</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl hover:bg-white hover:shadow-sm transition-all border border-transparent hover:border-gray-100">
+                            <div class="bg-purple-100 text-purple-600 p-3 rounded-xl"><i data-lucide="map-pin"></i></div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Oficina Principal</h4>
+                                <p class="text-gray-500 text-sm">Calle de Ejemplo 123, Madrid, España</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-xl shadow-gray-200/50 reveal delay-100">
+                    <h3 class="text-2xl font-bold mb-6">Solicitar Cotización</h3>
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all bg-gray-50 focus:bg-white" placeholder="Tu nombre">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
+                                <input type="tel" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all bg-gray-50 focus:bg-white" placeholder="Tu teléfono">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Tipo de envío</label>
+                            <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all bg-gray-50 focus:bg-white">
+                                <option>Aéreo (Cajas / Documentos)</option>
+                                <option>Marítimo (Cajas grandes)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Mensaje o dimensiones</label>
+                            <textarea rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all bg-gray-50 focus:bg-white" placeholder="Detalles de tu envío..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gray-900 hover:bg-black text-white py-4 rounded-xl font-medium transition-colors">
+                            Enviar Solicitud
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-12">
+            <div class="col-span-2">
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-6 h-6 rounded-md bg-blue-600 flex items-center justify-center text-white">
+                        <i data-lucide="package" class="w-4 h-4"></i>
+                    </div>
+                    <span class="font-bold text-lg text-gray-900">Honduras Express</span>
+                </div>
+                <p class="text-gray-500 text-sm max-w-sm">La forma más segura y rápida de enviar tus paquetes desde España a cualquier rincón de Honduras.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-gray-900 mb-4">Enlaces</h4>
+                <ul class="space-y-2 text-sm text-gray-500">
+                    <li><a href="#servicios" class="hover:text-blue-600 transition-colors">Servicios</a></li>
+                    <li><a href="/portal-clientes" class="hover:text-blue-600 transition-colors">Portal de Clientes</a></li>
+                    <li><a href="#contacto" class="hover:text-blue-600 transition-colors">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-gray-900 mb-4">Legal</h4>
+                <ul class="space-y-2 text-sm text-gray-500">
+                    <li><a href="#" class="hover:text-blue-600 transition-colors">Términos y Condiciones</a></li>
+                    <li><a href="#" class="hover:text-blue-600 transition-colors">Política de Privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-gray-100 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-xs text-gray-400">© 2026 Honduras Express. Todos los derechos reservados.</p>
+            <div class="flex gap-4 text-gray-400">
+                <a href="#" class="hover:text-gray-900 transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                <a href="#" class="hover:text-gray-900 transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
